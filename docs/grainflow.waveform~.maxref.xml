@@ -34,14 +34,9 @@
 			<description>redraws the buffer display </description>
 		</method>
 
-		<method name='set'>
-			<digest>Choose a named buffer~ from which to read</digest>
-			<description>Choose a named buffer~ from which to read. </description>
-		</method>
-
-		<method name='buf'>
-			<digest></digest>
-			<description></description>
+		<method name='grainAmp'>
+			<digest>sets the vertical position of the grain dots </digest>
+			<description>sets the vertical position of the grain dots </description>
 		</method>
 
 		<method name='grainWindow'>
@@ -64,14 +59,19 @@
 			<description>sets if the grain dots should draw at all </description>
 		</method>
 
-		<method name='grainAmp'>
-			<digest>sets the vertical position of the grain dots </digest>
-			<description>sets the vertical position of the grain dots </description>
+		<method name='buf'>
+			<digest></digest>
+			<description></description>
 		</method>
 
 		<method name='anything'>
 			<digest></digest>
 			<description></description>
+		</method>
+
+		<method name='set'>
+			<digest>Choose a named buffer~ from which to read</digest>
+			<description>Choose a named buffer~ from which to read. </description>
 		</method>
 
 	</methodlist>
@@ -159,6 +159,11 @@
 		<attribute name='triangleColor' get='1' set='1' type='float64' size='1' >
 			<digest>changes the selection triangles </digest>
 			<description>changes the selection triangles </description>
+		</attribute>
+
+		<attribute name='vZoom' get='1' set='1' type='float64' size='1' >
+			<digest>Increases the Y scale of the waveform </digest>
+			<description>Increases the Y scale of the waveform </description>
 		</attribute>
 
 		<attribute name='waveformColor' get='1' set='1' type='float64' size='1' >
